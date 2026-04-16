@@ -18,7 +18,7 @@ const AddBlog = () => {
 
     try {
       const api = await axios.get(
-        `http://localhost:4000/api/blogs/blog/${auth.id}`,
+        `https://mern-2026-backend.onrender.com/api/blogs/blog/${auth.id}`,
         {
           headers: { "Content-Type": "application/json" },
           withCredentials: true,
@@ -41,7 +41,7 @@ const AddBlog = () => {
     if (!auth.id) {
       try {
         const api = await axios.post(
-          `http://localhost:4000/api/blogs/new`,
+          `https://mern-2026-backend.onrender.com/api/blogs/new`,
           {
             title,
             description,
@@ -87,7 +87,7 @@ const AddBlog = () => {
     } else {
       try {
         const api = await axios.put(
-          `http://localhost:4000/api/blogs/${auth.id}`,
+          `https://mern-2026-backend.onrender.com/api/blogs/${auth.id}`,
           {
             title,
             description,

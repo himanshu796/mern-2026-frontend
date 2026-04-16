@@ -9,7 +9,7 @@ const Profile = () => {
   const auth = useContext(context);
   useEffect(() => {
     const fetchUser = async () => {
-      const api = await axios.get("http://localhost:4000/api/users/myprofile", {
+      const api = await axios.get("https://mern-2026-backend.onrender.com/api/users/myprofile", {
         headers: {
           "Content-Type": "application/json",
         },

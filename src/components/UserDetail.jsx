@@ -8,7 +8,7 @@ const UserDetail = ({ id }) => {
 
   useEffect(() => {
     const fetchUser = async () => {
-      const api = await axios.get(`http://localhost:4000/api/users/${id}`, {
+      const api = await axios.get(`https://mern-2026-backend.onrender.com/api/users/${id}`, {
         headers: {
           "Content-Type": "application/json",
         },

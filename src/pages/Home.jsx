@@ -7,7 +7,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchBlog = async () => {
-      const api = await axios.get(`http://localhost:4000/api/blogs/allblogs`, {
+      const api = await axios.get(`https://mern-2026-backend.onrender.com/api/blogs/allblogs`, {
         headers: {
           "Content-Type": "application/json",
         },

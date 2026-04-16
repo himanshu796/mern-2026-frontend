@@ -13,7 +13,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const logout = async () => {
-    const api = await axios.get(`http://localhost:4000/api/users/logout`, {
+    const api = await axios.get(`https://mern-2026-backend.onrender.com/api/users/logout`, {
       headers: {
         "Content-Type": "application/json",
       },

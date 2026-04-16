@@ -13,7 +13,7 @@ const MyBlogs = () => {
 
   useEffect(() => {
     const fetchBlog = async () => {
-      const api = await axios.get(`http://localhost:4000/api/blogs/myblogs`, {
+      const api = await axios.get(`https://mern-2026-backend.onrender.com/api/blogs/myblogs`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -26,7 +26,7 @@ const MyBlogs = () => {
   }, []);
 
   const deleteBlog = async (id) => {
-    const api = await axios.delete(`http://localhost:4000/api/blogs/${id}`, {
+    const api = await axios.delete(`https://mern-2026-backend.onrender.com/api/blogs/${id}`, {
       headers: {
         "Content-Type": "application/json",
       },

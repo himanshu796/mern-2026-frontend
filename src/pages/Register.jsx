@@ -16,7 +16,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const api = await axios.post(
-        `http://localhost:4000/api/users/register`,
+        `https://mern-2026-backend.onrender.com/api/users/register`,
         {
           name,
           email,
